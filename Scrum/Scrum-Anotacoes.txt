@@ -1,0 +1,27 @@
+Scrum:  Framework de metodologia de desenvolvimento ágil, seus escopos são definidos ao longo do projeto e utilizam 3 pilares como principais caracterísiticas Adaptação, Transparência e Inspeção. 
+
+Product Owner - é uma pessoa que representa a área de negócios, é o responsável por orientar o time de desenvolvimento a realizar o desenvolvimento de certa parte do software, prioriza o backlog. 
+
+Scrum Master - Garante o uso correto do Scrum, fazendo as cerimonias ocorrerem de acordo com a base do Scrum para que o projeto seja entregue de forma correta. Auxilia o PO no planejamento e estimativas do backlog. Treina o time em autogerenciamento e interdisciplinaridade. 
+
+Cerimonias de Scrum:  Reunião de definição de Sprint, Reunião dirária, Review e Retrospectiva.
+
+Time box: tempo máximo para fazer uma cerimônia. 
+Sprint - é o principal evento do Scrum, sua duração tem 30 dias corridos ou menos.
+
+Composição de uma Sprint: 
+- Planejamento da Sprint
+- Reunião diárias (daily meeting)
+- Revisão da Sprint (Review)
+- Retrospectiva da Sprint.
+
+Sprint de 30 dias (Reunião de 8 horas, para dicidir o que fazer e como fazer)
+
+Daily Meeting (O que acontece?)
+O time se reune e respondem a perguntas do que foi feito ontem, o que será feito hoje e se tem algum impeditivo para isto ser feito. 
+
+Review: O que acontece?
+O time apresenta o que foi realizado no projeto e como foi feito e tira suas dúvidas. 
+
+Retrospectiva: O que acontece?
+O time rever o que foi realizado, quais foram os erros da equipe e soluções para que não ocorram novamente no próximo ciclo, caso ocorra. 
