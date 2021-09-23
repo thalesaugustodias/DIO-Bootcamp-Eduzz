@@ -25,3 +25,4 @@ O time apresenta o que foi realizado no projeto e como foi feito e tira suas dú
 
 Retrospectiva: O que acontece?
 O time rever o que foi realizado, quais foram os erros da equipe e soluções para que não ocorram novamente no próximo ciclo, caso ocorra. 
+
