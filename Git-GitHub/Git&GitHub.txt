@@ -1,0 +1,90 @@
+GIT e GITHUB:
+
+Git > é um sistema de versionamento distribuído. 
+
+- Criado por linus torvalds em 2005.
+
+- É usado primariamente para desenvolvimento de software, mas pode ser usado para outros tipos de projeto. 
+
+comandos:
+
+git init > para inicializar o  git controlador de verões na pasta do projeto.
+
+git add . > para adicionar o projeto no git.
+
+git commit -m "descricao" > para commitar e salvar a versão do projeto.
+
+git status > para verificar o status do projeto.
+
+git log > para verificar as alterações realizadas no projeto.
+
+git log --oneline > para verificar o log do commite por linha.
+
+:q! > para sair da tela do vim. 
+
+git clean -df > para voltar a versão anterior do commite.
+
+git checkout -- . > para concluir a alteração do comando anterior.
+
+git reset --soft HEAD~1 > desfazer o ultimo commit sem alterar os arquivos.
+
+git reset --hard HEAD~1 > remover o último commit Inclusive as alterações nos arquivos.
+
+git checkout "codigo do commit" >  consultar commits anteriores sem fazer alterações.
+
+git checkout "nome do branch" > para ir para o último commit do branch selecionado.
+
+git diff > mostra as informações de alteração, detalhada. 
+git diff --name-only > mostra quais arquivos foram alterados
+git diff index.html > verifica alterações no arquivo especificado.
+
+git push link.git master -f
+
+git push origin master 
+
+git revert --no-edit > rollback no commit errado.
+
+git push origin :nomedobranch (deletando o branch dentro do branch)
+
+git branch -D nomedobranch (deletando)
+---------------------------------------------
+
+Associando um repositório remoto ao meu repositório local:
+
+comandos: 
+
+1) Associar nosso repositório local ao repositório remoto, dando o apelido de origin a ele:
+
+- git remote add origin <URI do repositório remoto>
+
+2) Associar o repositório local a um outro repositório remoto, porém mantendo o mesmo apelido:
+
+- git remote set-url origin <URI do repositório remoto>
+---------------------------------------------
+Subindo repositório local para o Github:
+
+comando: 
+
+- git push -u origin master
+
+** se já foi utilizado anteriormente a opção -u, nas próximas vezes que for subir o branch master, bastar fazer o comando:
+
+- git push
+---------------------------------------------
+Atualizando o seu repositório local:
+
+comando: 
+
+git pull origin master > iniciar antes de começar a fazer o projeto.
+
+
+
+
+
+
+
+
+
+
+
+
