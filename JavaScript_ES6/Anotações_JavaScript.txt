@@ -1,0 +1,257 @@
+Anotações JS:
+
+Formas de mostrar o Output: 
+
+document.getElementById("exemplo").innerHTML = "exemplo"; > mostrando algo na tela selecionando o ID do elemento no body. 
+
+document.write("exemplo"); > criando um elemento no documento. 
+
+window.alert("Mensagem de exemplo"); > executando uma mensagem na janela do navegador. 
+
+console.log("testano") > mostrando mensagem no console do navegador.
+
+-------------
+
+Formas de declarar variáveis:
+
+var nome = x; > pode alterar a várial no escopo global;
+let nome = y; > Só pode alterar a varial no escopo local;
+const nome = a; Não é permitida a alteração da variável;
+-------------------------------------------------------------------------------------------------------
+Selecionando Elemento através do id:
+
+document.getElementById('exemplo') // retorna um elemento do documento(html) através do id.
+
+document.getElementById('exempro').innerHTML = "<button>Butao</button>"; //Irá inserir no elemento o que for colocado nas aspas exemplo (um trecho de código html);
+
+********
+Selecionando o elemento pela classe:
+
+document.getElementsByClassName('listas') //retorna um array de classes.
+
+document.getElementsByClassName('listas')[0].innerHTML = 'alterando o elemento';
+
+*********
+
+Selecionando elementos através da tag:
+
+document.getElementByTagName('div')[0].innerHTML = ('alterando elemento')
+
+**********
+Selecionando o elemento através do nome:
+
+document.getElementsByName('exemplo') // utilizado para acessar campos de textos 
+
+------------------------------------------
+Selecionando elementos através do querySelector:
+
+document.querySelector(.class #id) // retorna um item de cada elemento;
+
+document.querySelectorAll(.class) // retorna todos as classes; 
+
+document.querySelector ('tag') // retorna a tag.
+
+-------------------------------------------
+Scroll:
+
+Quando for o scroll de um elemento:
+
+ScrollLeft > scroll de baixo
+ScrollTop > scroll lateral
+
+Scroll da tela inteira:
+window.scrollY > scroll lateral
+
+window.scrollX > scroll de baixo
+
+******************
+
+Realizando alterações no scroll via JS:
+
+document.querySelector('.elemento').ScrollTo(0-X,0-Y);
+
+
+*******************
+criar uma função de onclick="nomeDoAtributo"() no html e passar no Js as informações do atributo.
+ex: function subirTela() {
+   window.scrollTo(x,y);
+}
+Com ScrollSuave EX:
+unction subirTela() {
+   window.scrollTo({
+   top:0
+   behavior:'smooth'
+});
+}
+-----------------------------
+Loop For Array:
+ex: let carros = ['ferrari, 'fusca', 'palho', 'meu ovo'];
+
+let html = '<ul>';
+
+for (let i in carros) {
+    html += '<li>' + carros [i] + '</li>';
+}
+html  += '</ul>';
+
+document.getElementById("demo").innerHtml = html;
+---------------------------------
+Refresh e Redirect:
+
+Redirect > window.location.href = 'url do site';"
+---------------------------------------------------------------------------------------------------------------------------------
+Métodos de Manipulação de Strings:
+
+Length > realiza a contade de strings.
+IndexOf > encontrar a posição de uma string através do que for informado no parâmetro. 
+slice > retorna o valor a partir do que for informado no parâmetro seja do começo ou do fim da string. 
+substring > mesma função do slice, porém não pega de trás para frente.
+substr > mesma função só que pode pegar o inicio da string + valor de quantidade de string informada no segundo parâmetro.
+Replace > troca um valor por outro. 
+ToUpperCase > Strings maiúsculas.
+ToLowerCase > Strings minúsculas.
+trim > retira os espaços inúteis na digitação de uma string. 
+charAt > saber qual caracter está na posição informada. 
+split > transforma string em array. 
+
+---------------------------------------------------------------------------------------------------------
+Manipulação de Numbers:
+ToString > Converte number em string. 
+toFixed(quantidade de caracteres) > utilizado para informar casas decimais após a virgula.
+parseInt > converte valor de string em number. 
+
+---------------------------------------------------------------------------------------------------------
+Métodos de Arrays:
+join > pega o array e insere a informação de divisão que você colocar ex: -.
+indexOf > encontrar a posição de uma string através do que for informado no parâmetro e retorna o valor da posição. 
+pop > remove o ultimo item do array.
+shift > remove o primeiro item do array. 
+push > adiciona um novo item ao array. 
+splice > remove item do array em definitivo. 
+concat(lista) > concatena os arrays.
+sort > orderna em ordem alfabetica.
+reverse > reverte a ordem da coisa;
+map (function) > percorre todos os itens do array, realizando as alterações em cada um deles. 
+filter > criamos um filtro para o array, retornando o item desejado. 
+every > verifica todos os itens do array e retorna uma condição. 
+some > verifica se algum dos itens estão dentro da condição informada se um deles tiver, retorna true senão, false. 
+
+ex: return (item > 3)? true : false; > função que retorna uma condição. 
+find > procura um item dentro de um array e retorna o item em si.
+findIndex > retorna a posição de um item dentro de um array. 
+
+-------------------------------------------------------------------------------------------------------------------------------
+Manipulação de Dates JS:
+Date é um objeto!
+
+para chamar o objeto sintaxe > new Date(); > irá capturar a data e hora de forma extensa do hardware que estiver abrindo a aplicação naquele momento.
+
+d.ToString > retorna o objeto new Date(); de forma resumida. 
+d.toUTCString () > retorna o objeto new Date(); com o horário padrão de GMT. 
+
+Pegando informações dos Dates com o get:
+
+d.getFullYear(); > retorna o ano atual.
+d.getMoth(); > retorna o mês atual.
+d.getDay(); > retorna em inteiro o número do dia da semana.
+d.getDate(); > retorna a data atual.
+d.getHours() > retorna a hora atual.
+d.getMinutes() > retorna o minuto atual.
+d.getSeconds() > retorna o segundo atual.
+d.getMilliseconds > retorna os milisegundos atuais.
+d.getTime ou Date.now() > retorna os milisegundos de 01/01/1970 as 00:00:00 GTM até o momento atual.
+*************************************************************
+Setando/inserindo informações dos Dates com o set:
+d.setFullYear(); > inseri o ano desejado.
+d.setMoth(); > retorna o mês desejado.
+d.setDay(); > retorna em inteiro o número do dia da semana desejado.
+d.setDate( d.getDate() + valor desejado); > retorna a data desejada
+d.setHours() > retorna a hora desejada.
+d.setMinutes() > retorna o minuto desejado.
+d.setSeconds() > retorna o segundo desejado.
+d.setMilliseconds > retorna os milisegundos desejados.
+d.setTime ou Date.now() > retorna os milisegundos de 01/01/1970 as 00:00:00 GTM até o momento desejado
+
+-------------------------------------------------------------------------------------------------------------------------------
+Manipulação de operações matemáticas em JS:
+
+Math.round() > arrendoda o numero de cima ou para baixo.
+Math.floar() > arredonda o número para baixo independente.
+Math.ceil() > arredonda para cima independente.
+Math.abs() > retorna o valor absoluto do numero informado. (positivo)
+Math.min() > retorna o valor minimo dentro do array de números.
+Math.max() > retorna o maior valor dentro de um array.
+Math.random() > retorna um número aleatório entre o valor informado de 0 a 1.
+Math.floar.(Math.random() * valor desejado); > função para retornar um número aleatório desejado.
+
+-------------------------------------------------------------------------------------------------------------------------------
+Manipulando Timers em JS:
+
+setInterval > seta o iniciar de uma variável infinitas vezes até vc decidir parar. 
+clearInterval > limpa a inserção das informações na variável e para o setInterval. 
+setTimeout > irá esperar um certo intervalo e irá executar a função uma única vez.
+ex: um alert com uma mensagem após 2 segundos. 
+
+funcition rodar() {
+    setTimeout(function() {
+	document.querySelector('.demo').innerHTML = 'Rodou no Drone!';
+}, 2000);
+}
+ex: parando o timer:
+let timer;
+funcition rodar() {
+    timer = setTimeout(function() {
+	document.querySelector('.demo').inerHTML = 'Rodou no Drone!';
+}, 2000);
+}
+function parar() {
+       clearTimeout(timer);
+}
+----------------------------------------------------------------------------------------------------------------------------------
+Template Strings:
+
+utilizamos o ${ o cifrão} para concatenar as strings sem precisar colocar o sinal de +;
+let cm = 20;
+let frase = `meu nome é creytu ratão e eu tenho ${cm}cm de piroca`; 
+console.log (frase);
+
+-------------
+desconstrução de array:
+
+transformar um array em variável
+ex:
+let info = ['array1', 'array2',];
+let [variavel1, variavel2 = info;]
+console.log(variavel1, variavel2)
+---------------------------------------------------------------------------------------------------------------------------------
+Operador Spread: Adiciona mais informações em arrays ou objetos;
+
+...variável, informação adicional
+
+ex: info = [... info+, meu pau]
+ex2: let info =
+
+----------------------------------------------------------------------------------------------------------------------------------
+Operador rest ... : Serve para adicionar novos parâmetros dentro de uma função. 
+----------------------------------------------------------------------------------------------------------------------------------
+Objeto: Key, values e entries: Serve para debugar o código.
+
+ex:
+Object.key > retorna as chaves do objeto (nome do obejto)
+Object.values > retorna o que tem dentro das chaves.
+Object.entries(objeto) > retorna o index e o valor do objeto.
+----------------------------------------------------------------------------------------------------------------------------------
+padStart e padEnd: 
+padEnd > quando desejamos informar uma certa quantidade de valores e caso não tenha o necessário, substituir por algum simbolo, por exemplo.
+
+ex: console.log( telefone.padEnd(5, '*') ); > se digitar 3 numeros, os outros dois vão ser '*' após o número digitado.
+
+---------------------------------------------------------------------------------------------------------------------------------
+JSON.Parse: utilizado para transformar uma string JSON em JSON puro. 
+
+JSON.stringify > faz o inverso, transforma JSON puro em JSON string. 
+
+---------------------------------------------------------------------------------------------------------------------------------
+Código Sincrono, quando é executado linha por linha. Não esperar uma parte do código ser concluida (por exemplo) para seguir em frente.
+
+Callback > executa o código compleoto depois que a ação anterior dentro do código é concluida. (um setTimeOut por exemplo).
