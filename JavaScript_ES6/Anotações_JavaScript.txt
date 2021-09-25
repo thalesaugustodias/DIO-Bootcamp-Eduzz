@@ -228,7 +228,7 @@ Operador Spread: Adiciona mais informações em arrays ou objetos;
 
 ...variável, informação adicional
 
-ex: info = [... info+, meu pau]
+ex: info = [... info+, exemplo]
 ex2: let info =
 
 ----------------------------------------------------------------------------------------------------------------------------------
